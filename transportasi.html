@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transportasi Bulungan</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+/* NAVBAR (SAMA) */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:linear-gradient(90deg, #1e3a5f, #2c4f7c);
+    padding:12px 25px;
+    flex-wrap:wrap;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.logo{
+    color:#c6a75e;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.menu{
+    display:flex;
+    gap:12px;
+    list-style:none;
+    flex-wrap:wrap;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    font-size:13px;
+    padding:6px 10px;
+    border-radius:5px;
+    transition:0.3s;
+}
+
+.menu a:hover{
+    background:#c6a75e;
+    color:#1e3a5f;
+}
+
+.menu a.active{
+    background:#c6a75e;
+    color:#1e3a5f;
+}
+
+/* HERO */
+.hero{
+    height:60vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('https://image2url.com/r2/default/images/1775299148224-2174194e-8d47-45f4-97a8-031624040ec1.webp');
+
+    background-size:cover;
+    background-position:center;
+}
+
+.hero h1{
+    font-size:42px;
+    animation:fadeIn 1s ease;
+}
+
+/* ANIMASI */
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(20px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+@keyframes fadeUp{
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* CONTAINER */
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:50px 20px;
+}
+
+/* CARD */
+.card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    margin-bottom:20px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.1);
+
+    opacity:0;
+    transform:translateY(40px);
+    animation:fadeUp 1s forwards;
+}
+
+.card:nth-child(1){animation-delay:0.2s;}
+.card:nth-child(2){animation-delay:0.4s;}
+.card:nth-child(3){animation-delay:0.6s;}
+.card:nth-child(4){animation-delay:0.8s;}
+
+.card h2{
+    color:#1e3a5f;
+    margin-bottom:10px;
+}
+
+.card p{
+    line-height:1.7;
+    color:#444;
+}
+
+/* FOOTER */
+footer{
+    background:#1e3a5f;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:40px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <h2 class="logo">Explore Bulungan</h2>
+
+    <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tentang.html">Tentang</a></li>
+        <li><a href="destinasi-alam.html">Destinasi Alam</a></li>
+        <li><a href="destinasi-budaya.html">Destinasi Budaya</a></li>
+        <li><a href="aktivitas.html">Aktivitas</a></li>
+        <li><a href="kuliner.html">Kuliner</a></li>
+        <li><a href="akomodasi.html">Akomodasi</a></li>
+        <li><a href="transportasi.html" class="active">Transportasi</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+        <li><a href="booking.html">Booking</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Transportasi di Bulungan</h1>
+</section>
+
+<!-- CONTENT -->
+<div class="container">
+
+    <div class="card">
+        <h2>✈️ Transportasi Udara</h2>
+        <p>
+            Akses menuju Bulungan dapat ditempuh melalui jalur udara dengan penerbangan menuju Bandara Tanjung Harapan. 
+            Transportasi udara menjadi pilihan tercepat untuk mencapai wilayah Kalimantan Utara.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>🚗 Transportasi Darat</h2>
+        <p>
+            Di dalam kota, tersedia kendaraan seperti ojek, mobil sewa, dan angkutan umum yang memudahkan wisatawan 
+            menjangkau berbagai destinasi wisata di Bulungan.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>🚤 Transportasi Sungai</h2>
+        <p>
+            Sungai Kayan menjadi jalur transportasi penting bagi masyarakat. Perahu dan speedboat sering digunakan 
+            untuk menuju daerah yang sulit dijangkau melalui jalur darat.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>🧭 Tips Perjalanan</h2>
+        <p>
+            Disarankan untuk merencanakan perjalanan dengan baik, memilih transportasi sesuai kebutuhan, 
+            serta memperhatikan kondisi cuaca agar perjalanan lebih aman dan nyaman.
+        </p>
+    </div>
+
+</div>
+
+<footer>
+    <p>©️ 2026 Explore Bulungan Tourism Website</p>
+</footer>
+
+</body>
+</html>

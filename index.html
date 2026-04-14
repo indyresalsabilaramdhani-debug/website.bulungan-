@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore Bulungan</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+/* NAVBAR (SAMAIN) */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#1e3a5f;
+    padding:12px 25px;
+    flex-wrap:wrap;
+}
+
+.logo{
+    color:#c6a75e;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.menu{
+    display:flex;
+    gap:12px;
+    list-style:none;
+    flex-wrap:wrap;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    font-size:13px;
+    padding:5px 8px;
+    border-radius:4px;
+    transition:0.3s;
+}
+
+.menu a:hover{
+    background:#c6a75e;
+    color:#1e3a5f;
+}
+
+.menu a.active{
+    background:#c6a75e;
+    color:#1e3a5f;
+}
+
+/* HERO VIDEO */
+.hero{
+    height:80vh;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero video{
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    z-index:-1;
+}
+
+.hero::after{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+    z-index:-1;
+}
+
+.hero h1{
+    font-size:45px;
+}
+
+/* FOOTER */
+footer{
+    background:#1e3a5f;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:40px;
+}
+
+@media(max-width:768px){
+    .navbar{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .menu{
+        margin-top:10px;
+        gap:8px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <h2 class="logo">Explore Bulungan</h2>
+
+    <ul class="menu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="tentang.html">Tentang</a></li>
+        <li><a href="destinasi-alam.html">Destinasi Alam</a></li>
+        <li><a href="destinasi-budaya.html">Destinasi Budaya</a></li>
+        <li><a href="aktivitas.html">Aktivitas</a></li>
+        <li><a href="kuliner.html">Kuliner</a></li>
+        <li><a href="akomodasi.html">Akomodasi</a></li>
+        <li><a href="transportasi.html">Transportasi</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+        <li><a href="booking.html">Booking</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+
+    <video autoplay muted loop playsinline>
+        <source src="https://image2url.com/r2/default/videos/1775290863458-07ce23a0-6b3b-48cc-8479-df7de327ff99.mp4">
+    </video>
+
+    <div>
+        <h1>Selamat Datang di Bulungan</h1>
+        <p>Temukan keindahan alam, budaya, dan kuliner Kalimantan Utara</p>
+    </div>
+
+</section>
+
+<footer>
+    <p>©️ 2026 Explore Bulungan Tourism Website</p>
+</footer>
+
+</body>
+</html>

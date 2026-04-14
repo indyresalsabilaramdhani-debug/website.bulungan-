@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Destinasi Budaya Bulungan</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+/* NAVBAR (SAMA) */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:linear-gradient(90deg, #1e3a5f, #2c4f7c);
+    padding:12px 25px;
+    flex-wrap:wrap;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.logo{
+    color:#c6a75e;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.menu{
+    display:flex;
+    gap:12px;
+    list-style:none;
+    flex-wrap:wrap;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    font-size:13px;
+    padding:6px 10px;
+    border-radius:5px;
+    transition:0.3s;
+}
+
+.menu a:hover{
+    background:#c6a75e;
+    color:#1e3a5f;
+}
+
+.menu a.active{
+    background:#c6a75e;
+    color:#1e3a5f;
+}
+
+/* HERO */
+.hero{
+    height:50vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('https://image2url.com/r2/default/images/1775299148224-2174194e-8d47-45f4-97a8-031624040ec1.webp');
+
+    background-size:cover;
+    background-position:center;
+}
+
+.hero h1{
+    font-size:40px;
+    animation:fadeIn 1s ease;
+}
+
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(20px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+/* CARD */
+.container{
+    padding:40px 20px;
+    max-width:1000px;
+    margin:auto;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    margin-bottom:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
+    opacity:0;
+    transform:translateY(40px);
+    animation:fadeUp 1s forwards;
+}
+
+.card:nth-child(1){animation-delay:0.2s;}
+.card:nth-child(2){animation-delay:0.4s;}
+.card:nth-child(3){animation-delay:0.6s;}
+
+@keyframes fadeUp{
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.card h2{
+    margin-bottom:10px;
+    color:#1e3a5f;
+}
+
+.card p{
+    line-height:1.6;
+}
+
+.card img{
+    width:100%;
+    margin-top:10px;
+    border-radius:10px;
+}
+
+/* FOOTER */
+footer{
+    background:#1e3a5f;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:40px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .navbar{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .menu{
+        margin-top:10px;
+        gap:8px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <h2 class="logo">Explore Bulungan</h2>
+
+    <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tentang.html">Tentang</a></li>
+        <li><a href="destinasi-alam.html">Destinasi Alam</a></li>
+        <li><a href="destinasi-budaya.html" class="active">Destinasi Budaya</a></li>
+        <li><a href="aktivitas.html">Aktivitas</a></li>
+        <li><a href="kuliner.html">Kuliner</a></li>
+        <li><a href="akomodasi.html">Akomodasi</a></li>
+        <li><a href="transportasi.html">Transportasi</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+        <li><a href="booking.html">Booking</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Destinasi Budaya Bulungan</h1>
+</section>
+
+<!-- CONTENT -->
+<div class="container">
+
+    <div class="card">
+        <h2>🏛️ Kerajaan / Kesultanan Bulungan</h2>
+        <p>
+            Bulungan memiliki sejarah sebagai wilayah kesultanan yang berperan penting dalam perkembangan budaya di Kalimantan Utara. 
+            Nilai sejarah ini masih dapat ditemukan melalui peninggalan dan cerita masyarakat setempat.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>🎭 Budaya dan Adat Istiadat</h2>
+        <p>
+            Masyarakat Bulungan memiliki berbagai adat istiadat yang masih dijaga hingga saat ini, seperti tarian tradisional, upacara adat, dan bahasa daerah.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>🪘 Kesenian Tradisional</h2>
+        <p>
+            Kesenian seperti musik tradisional dan tarian daerah menjadi bagian penting dari kehidupan masyarakat Bulungan, yang sering ditampilkan dalam acara budaya.
+        </p>
+    </div>
+
+</div>
+
+<footer>
+    <p>©️ 2026 Explore Bulungan Tourism Website</p>
+</footer>
+
+</body>
+</html>
